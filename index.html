@@ -126,11 +126,18 @@
     }
 
     .toc nav {
-      display: grid;
-      gap: 6px;
       max-height: calc(100vh - 200px);
       overflow: auto;
       padding-right: 6px;
+    }
+
+    .toc nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
     }
 
     @media (max-width: 980px) {
@@ -140,20 +147,19 @@
       }
 
       .toc nav {
-        display: flex;
-        flex-wrap: wrap;
         max-height: none;
         overflow: visible;
         padding-right: 0;
-        gap: 8px;
         margin-top: 10px;
       }
 
+      .toc nav ul {
+        gap: 8px;
+      }
+
       .toc a {
-        display: inline-flex;
-        align-items: center;
         padding: 8px 10px;
-        border-radius: 999px;
+        border-radius: 10px;
         white-space: normal;
         text-align: left;
       }
@@ -266,17 +272,46 @@
       color: var(--muted);
       font-size: 12px;
     }
+
+    .back-to-toc {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 50;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: var(--text);
+      box-shadow: var(--shadow);
+      font-size: 13px;
+      line-height: 1;
+      text-decoration: none;
+    }
+
+    .back-to-toc:hover {
+      text-decoration: none;
+      background: rgba(138,180,255,0.10);
+      border-color: rgba(138,180,255,0.24);
+    }
+
+    @media print {
+      .back-to-toc { display: none; }
+    }
   </style>
 </head>
 <body>
   <div class="page">
     <header>
       <div class="title">
-        <h1>Building Information & Rules</h1>
+        <h1>Ocean Gate Condominium Trust (OGT) Information & Rules</h1>
         <span class="badge">Single-page quick reference</span>
       </div>
       <p class="subtitle">
-        This page includes a table of contents to jump to each subsection. All text below is generic placeholder content and can be replaced with your final wording.
+        This page contains the rules and regulation of OGT. You can find it as PDF.
       </p>
     </header>
 
@@ -288,7 +323,7 @@
             <span class="summary-right" aria-hidden="true">Tap to open/close</span>
           </summary>
           <p class="hint">Click a section to jump. The current section highlights automatically.</p>
-          <nav id="toc"></nav>
+          <nav><ul id="toc"></ul></nav>
         </details>
       </aside>
 
@@ -300,7 +335,10 @@
               This section contains a general statement describing community goals, expectations, and guiding principles. It can include policies about stewardship, resident cooperation, and shared responsibilities.
             </p>
             <p>
-Ocean Gate Tower Condominium Trust (OGT) has 5 trustees. Trustees are volunteers and remain private persons at all times except when the Board is in session. During the Board's meetings the trustees exercise their governing powers and responsibilities. Residents are requested not to address their grievances directly to an individual trustee, knock on trustee's door or call a trustee, but to submit their concerns to the Assistant Manager for Customer Services, Barbara Castro, either by phone: 781-284-1740, or
+Ocean Gate Tower Condominium Trust (OGT) has 5 trustees. Trustees are volunteers and remain private persons at all times except when the Board is in session. During the Board's meetings the trustees exercise their governing powers and responsibilities. Residents are requested not to address their grievances directly to an individual trustee, knock on trustee's door or call a trustee, but to submit their concerns to the
+OGT Office Team 
+DK Condominium Management LLC (
+agent for Ocean Gate Tower Condominium), either by phone: <strong>781-284-1740 </strong>, or
 by e-mail: <strong><a href="mailto:Office@dkmanagementllc.net">Office@dkmanagementllc.net</a></strong>, or in writing. Your issue will be relayed to the Board.
 To expedite the solution of your property issues please call
             </p>
@@ -334,7 +372,12 @@ This Handbook summarizes what is found in more complete and explicit form in the
 
 </p>
 <p>
-If you have any questions about a rule or regulation, or if you need a copy of the Trust Documents, please contact the Managing Agent for the Board of Trustees:            
+If you have any questions about a rule or regulation, or if you need a copy of the Trust Documents, please contact the
+OGT Office Team 
+DK Condominium Management LLC 
+(agent for Ocean Gate Tower Condominium), either by phone: <strong>781-284-1740 </strong>, or
+by e-mail: <strong><a href="mailto:Office@dkmanagementllc.net">Office@dkmanagementllc.net</a></strong>,
+for the Board of Trustees:            
 </p>
 
 
@@ -342,22 +385,38 @@ If you have any questions about a rule or regulation, or if you need a copy of t
         </section>
 
         <section id="s2">
-          <h2>4: Important phone numbers</h2>
+          <h2>Important phone numbers</h2>
           <div class="content">
-            <p>
-              Use this area for key contacts that residents and owners may need frequently.
-            </p>
             <div class="grid">
-              <div class="card"><div class="label">Office (Generic)</div><div class="value">(000) 000-0000</div></div>
-              <div class="card"><div class="label">Maintenance (Generic)</div><div class="value">(000) 000-0000</div></div>
-              <div class="card"><div class="label">Security (Generic)</div><div class="value">(000) 000-0000</div></div>
-              <div class="card"><div class="label">Local Emergency</div><div class="value"><strong>911</strong></div></div>
+              <div class="card"><div class="label">EMERGENCY</div>
+              <div class="value">911</div></div>
+
+              <div class="card"><div class="label">Revere Police</div>
+              <div class="value">
+                781-284-1212
+              </div></div>
+
+              <div class="card"><div class="label">State Police-Revere</div><div class="value">781-284-0038</div></div>
+
+
+              <div class="card"><div class="label">After Hours / Emergency</div><div class="value"> (617) 412-6201 </div></div>
+
+
+              <div class="card"><div class="label">Revere City Hall</div><div class="value"> 781-286-8100 </div></div>
+
+              <div class="card"><div class="label">Office (Generic)</div><div class="value">(781) 284-1740</div></div>
+
+              <div class="card"><div class="label">Revere Public Works-City Yard</div>
+              <div class="value">781-286-8149</div></div>
+
+              <div class="card"><div class="label">Electric/National Grid</div>
+              <div class="value">800-542-2031</div></div>
             </div>
           </div>
         </section>
 
         <section id="s3">
-          <h2>4-5: After Hours and Holiday Emergencies</h2>
+          <h2> After Hours and Holiday Emergencies</h2>
           <div class="content">
             <p>
               This section describes what qualifies as an after-hours emergency and how to report it. Include instructions for what information to provide (unit number, callback number, description, and immediate risks).
@@ -365,73 +424,359 @@ If you have any questions about a rule or regulation, or if you need a copy of t
             <p>
 
 After Hours and Holiday Emergencies
-The Management Company offers emergency on-call services (<strong><a href="tel:+17812846250">781-284-6250</a></strong>) after 5:00 PM during weekdays and all day on weekends and Holidays. Some examples of emergencies include building failure of heating and a/c equipment, elevator failure, flooding, Common Area damage, fire (<strong>911</strong> called first, then the Management Company), or any dangerous condition.
-All other requests for routine maintenance of the common areas, e.g., reporting a light out in the common areas or an incident on the property, a request, etc., can be left with Security/Concierge staff or on the voice mail in the on-site office (<strong><a href="tel:+17812841740">781-284-1740</a></strong>). A staff member will retrieve the message and dispatch maintenance personnel the following business day.
+The Management Company offers emergency on-call services (<strong><a href="tel:+16174126201">(617) 412-6201</a></strong>) after 5:00 PM during weekdays and all day on weekends and Holidays. Some examples of emergencies include building failure of heating and a/c equipment, elevator failure, flooding, Common Area damage, fire (<strong>911</strong> called first, then the Management Company), or any dangerous condition.
+All other requests for routine maintenance of the common areas, e.g., reporting a light out in the common areas or an incident on the property, a request, etc., can be left on the voice mail in the on-site office (<strong><a href="tel:+17812841740">781-284-1740</a></strong>). A staff member will retrieve the message and dispatch maintenance personnel the following business day.
 Unit maintenance, e. g., unit loss of electricity, cable, telephone, mechanical failure unit heating and a/c equipment, appliances, kitchen disposals, bathroom toilets and sink etc. is the Unit owner's
 responsibility. The Unit Owner is responsible for calling a repair service or utility provider of his/her own choice after the danger to the building is removed.
-The trustees and the Management Company may charge any Unit Owner for non-emergency calls made to the answering service that result in after- hours dispatch of maintenance personnel.
-Please use a reasonable-person judgment in any situation you encounter either in the common areas of OGT or in your own units. Any leaks, any water steadily growing stains is the ground for possible emergency and MUST be reported immediately to avoid damages to our property. Remember: we virtually live on top of each other, a small leak on the 18th floor, if not taken care of immediately, can go all the way to the 1st floor and damage every unit and every common area on its way throughout the building.
+</p>
 
-            </p>
+<p>
+The trustees and the Management Company may charge any Unit Owner for non-emergency calls made to the answering service that result in after- hours dispatch of maintenance personnel.
+</p>
+<p><strong>
+Please use a reasonable-person judgment in any situation you encounter either in the common areas of OGT or in your own units. Any leaks, any water steadily growing stains is the ground for possible emergency and MUST be reported immediately to avoid damages to our property. Remember: we virtually live on top of each other, a small leak on the 18th floor, if not taken care of immediately, can go all the way to the 1st floor and damage every unit and every common area on its way throughout the building.
+</strong> 
+         </p>
+
           </div>
         </section>
 
         <section id="s4">
-          <h2>6: Property Management</h2>
+          <h2>Property Management</h2>
           <div class="content">
             <p>
               This section outlines the property management role: day-to-day operations, service coordination, communications, and recordkeeping.
             </p>
             <p>
-              Replace with office hours, preferred contact methods, response-time expectations, and any resident portal details.
+DK Condominium Management LLC
+agent for Ocean Gate Tower Condominium
+382 Ocean Avenue
+Revere, MA 02151
+Email: Office@dkmanagementllc.net
+Office Tel: <strong><a href="tel:+17812841740">781-284-1740</a></strong>
+After Hours / Emergency: <strong><a href="tel:+16174126201">(617) 412-6201</a></strong>
             </p>
           </div>
         </section>
 
         <section id="s5">
-          <h2>7: Emergencies THAT MIGHT CAUSE DAMAGES TO YOUR UNIT phone numbers</h2>
+          <h2>Emergencies that might cause damages to your unit</h2>
           <div class="content">
             <p>
               List urgent contacts for events such as water intrusion, active leaks, fire/smoke, electrical hazards, or other situations that could cause immediate property damage.
             </p>
             <p>
               FOR ALL IMMEDIATE EMERGENCIES THAT MIGHT CAUSE DAMAGES TO YOUR UNIT, OR OTHER UNITS, OR COMMON AREAS PLEASE CALL:
-<strong><a href="tel:+17812846250">781-284-6250</a></strong>, 24/7
-(OCM, DK Condominium Management LLC, managing agent for the Board of Trustees).
-Definition of Emergency: leaks of any kind that you can't stop yourself, leaks of any kind you do not know the origin of, wet stains of any color for more than 24 hours. For any calls of different nature the fine of $100 to the unit shall be levied immediately.
+<strong><a href="tel:+17812846250">(617) 412-6201</a></strong>, 24/7
+(DK Condominium Management LLC, managing agent for the Board of Trustees).
+            </p>
+            <p>
+<strong>Definition of Emergency:</strong> leaks of any kind that you can't stop yourself, leaks of any kind you do not know the origin of, wet stains of any color for more than 24 hours. For any calls of different nature the fine of $100 to the unit shall be levied immediately.
 In case of fire or criminal activities on the premises of OGT call <strong>911</strong> first and the abovementioned number second.
-For all other problems: lack of heat, hot water, A/C, pests, noxious smell, noise, accumulation of trash, observed intruders in the common areas (non-criminal activities), parking, violations of our Rules and Regulations, damaged building equipment (laundry machines, overhead garage doors, trash chutes, pipes, pool area equipment, lights, windows, doors of the common areas, balconies, garages, community room fixtures and furniture, structure of the building,),
-PLEASE CALL: <strong><a href="tel:+17812841740">781-284-1740</a></strong> from 9 am to 11 pm on Monday- Saturday. 12 pm to 11 pm on Sunday.
-Barbara Castro - Assistant Manager, Customer Services;
-Rocky Ddungu - Maintenance Superintendent (Monday-Tuesday)
-Dennis Hutchinson- Maintenance Superintendent (Wednesday-Friday) Mohammed Audu - Concierge captain
-Muhammad Usman - Concierge (Saturday)
-Alex Atim - Concierge (Sunday)
+            </p>
+            <p>
+<strong>For all other problems:</strong> lack of heat, hot water, A/C, pests, noxious smell, noise, accumulation of trash, observed intruders in the common areas (non-criminal activities), parking, violations of our Rules and Regulations, damaged building equipment (laundry machines, overhead garage doors, trash chutes, pipes, pool area equipment, lights, windows, doors of the common areas, balconies, garages, community room fixtures and furniture, structure of the building,),
+<strong>please call:</strong> <strong><a href="tel:+16174126201">(617) 412-6201</a></strong> 
+
+
 Please keep this information for your records. Thank you.
             </p>
-            <div class="grid">
-              <div class="card"><div class="label">Plumber (Generic)</div><div class="value">(000) 000-0000</div></div>
-              <div class="card"><div class="label">Electrician (Generic)</div><div class="value">(000) 000-0000</div></div>
-              <div class="card"><div class="label">Water Shutoff (Generic)</div><div class="value">(000) 000-0000</div></div>
-              <div class="card"><div class="label">Building Emergency Line (Generic)</div><div class="value">(000) 000-0000</div></div>
-            </div>
           </div>
         </section>
 
         <section id="s6">
-          <h2>8: Rules and Regulation through 2026</h2>
+          <h2>Rules and Regulation through 2026</h2>
           <div class="content">
             <p>
               This section summarizes the current rules and regulations applicable through 2026. Include general topics such as noise, common areas, trash disposal, renovations, and resident conduct.
             </p>
+          </div>
+        </section>
+
+
+        <section id="s8">
+          <h2>Packages</h2>
+          <div class="content">
             <p>
-              Replace with the official rules text, effective dates, and any amendment history.
+Packages are delivered to the lobby of the building. Please come to the lobby to collect your packages. <strong>Sometimes the packages are delivered by mistaketo the nearby buildings. In that case please check the lobby of the nearby buildings.</strong>
+         </p>
+          </div>
+        </section>
+
+        <section id="s9">
+          <h2>Security Issues</h2>
+          <div class="content">
+            <p>
+   <strong>Attention Residents!</strong> 
+Effective Immediately. Security Issue!
+            </p>
+            <p>
+The Board of Trustees received multiple complaints from the residents of the building about an increasing amount of unfamiliar people roaming around the property, having lunches in the community room, using the pool and amenities, knocking on the units' doors with attempts of different solicitations!
+<strong>
+Such activities are strictly forbidden in OGT. 
+</strong>
+            </p>
+            <p>
+Please instruct your guests/visitors to sign in/out at the entrance/exit of the property at the concierge desk or in the office of OGT. Those visitors who parked their vehicles in a 90-minutes zone must register such cars with the front desk.
+            </p>
+            <p>
+<strong>Definition of a "visitor/guest":</strong> You do not live here, you are a visitor or a guest, unless you own a unit but rent it out at the moment.
+            </p>
+            <p>
+<strong>No exceptions for:</strong> a family member, a friend, a contractor, a servant, a nurse, an agent, an employee, etc.
+            </p>
+            <p>
+<strong>You are responsible for the behavior of your guests inside the building as well as outside. You must accompany your visitors in the common areas. Please watch your children: no running, no screaming in the corridors. Please do not disturb your neighbors. Have a little respect for each other.</strong>
+</p>
+<p>
+Thank you for your cooperation!
+<strong>Board of Trustees</strong>
+</p>
             </p>
           </div>
         </section>
 
+        <section id="s10">
+          <h2>Emergencies, Repairs and Maintenance issues</h2>
+          <div class="content">
+            <p>
+              This section explains how to report emergencies, repairs and maintenance issues to the office, including what details to include.
+            </p>
+            <p>
+The Board of Trustees and the Property management encourage you to report to the Office your findings of repairs/maintenance necessities in the common areas of the building. Please also report the emergencies in your unit that might affect the adjacent units or common areas. Definition of EMERGENCY: live water leaks that you can't stop, NO heat or AC, NO hot water, elevators' malfunction., trash chute malfunction.
+For these purposes, and for these emergencies only, please call:<strong><a href="tel:+17812846250"> (617) 412-6201 </a></strong> 24/7.
+           </p>
+            <p>
+Other repairs or maintenance concerns: water stains on the ceilings or walls in your units or common areas; noise; pests - mice, bedbugs, cockroaches, etc.; dirty or damaged floors, walls in common areas, malfunctioning equip- ment in laundry rooms, garages, pool areas- shall be submitted to the management office in writing only. The repairs/maintenance REQUEST FORM is available on the office door. Please fill it out and drop into the mail box below on the same office door. Your concerns will be addressed as soon as possible and the maintenance per- sonnel will be dispatched next business day.
+           </p>
+            <p>
+<strong>PLEASE DO NOT DISTURB THE MANAGEMENT FOR EQUIPMENT MALFUNCTIONS INSIDE YOUR OWN UNITS:</strong> dishwashers, faucets, noisy toilets, dripping showerheads, electrical equipment, electronics, phones are the responsibility of the unit owners. If you are renters, call your landlords - the unit owners. OGT IS NOT your landlord. The Board and the management deal only with the common areas and your units when and if they endanger the common areas and adjacent units.
+      </p>
+            <p>
+<strong>REMODELING YOUR UNIT:</strong> when you decide to remodel your units, please submit the description of the project to the Board of Trustees in accordance with the governing documents of the Association. All works must be performed by licensed and insured professionals.
+      </p>
+            <p>
+Please use the common sense and if in doubt, please contact the customer assistance line at <strong><a href="tel:+17812841740">781-284-1740</a></strong> (from 9 am to 11 pm) or e-mail: <strong><a href="mailto:Office@dkmanagementllc.net">Office@dkmanagementllc.net</a></strong>.
+Thank you for your cooperation!
+Board of Trustees
+June 2014
+            </p>
+            <p>
+            
+<strong>REPAIRS AND EMERGENCIES: October 21, 2014</strong>
+   When and if the units of OGT conduct any type of repairs or remodeling in their units it is the responsibility of the unit owner to supervise, monitor and arrange in advance their contractors. NO employee of OGT may assist unit owners in those works. It is also the responsibility of the unit owners not to obstruct any common areas during such activities, not to use common areas' electrical power or plumbing, and leave the common areas clean every day by 5:30 pm.
+        </p>
+            <p><strong>
+Dear Unit Owners, please consider the following: YOU, the UNIT OWNERS, go to your places of business where you get paid for your hours of services rendered, so do the employees of the Association. Your condo fees cover only the services of OGT employees' rendered to the common areas of the Association. Any work conducted in your individual units is your personal responsibility. You own your units!
+        </strong></p>
+            <p>
+<strong>HOWEVER</strong>, if the emergency comes from a unit and affects other units or the common areas, the management shall enter your units and eliminate the emergency situation, like: the leak from a dishwasher stop the leak inside the unit if possible (the unit will be re-billed for the services), and/or the common areas. Further repairs in the unit may not include the services of OGT employees and/or their time. The Unit Owners shall pay for services for their individual units' problems.
+        </p>
+            <p>
+<strong>ANOTHER EXAMPLE:</strong> the leak was caused by the common pipes inside the walls or ceilings, then it is an emergency when the OGT management and the contractor enter the unit and eliminate the emergency, as well as perform the repairs of the common pipes. If and only if the Association needed to cut through the dry walls and open the ceiling or the wall, the Association will close that hole, mud it, sand it, and prime it: make the wall or a ceiling whole again. It's the responsibility of the Association. The Association is not going to paint the ceiling or the wall, or replace the walls in the units that the Association did not cut or any individual unit's items because this is the responsibility of the unit owner. (See Master Deed, boundaries of your units) .That's why the unit owners have their own insurances. The cause of the leak was no one's fault, it was an unexpected damaging event, unless the Association knew about it and did nothing. However, If the unit owner/resident saw the wet stain and neglected to report it to the management, then the unit will be charged for the repairs. <strong> Remember: the Association is not an insurer, and the Association will not re-build the whole building, especially the concealed plumbing or fire pipes, just to be pro-active, because the developer failed to build it properly 35 years ago. When we bought our respective units, we all knew what we were buying into.</strong>
+        </p>
+            <p>
+  <strong>NEXT</strong>, if the leak originated in the unit above, then after the emergency is taken care of, i.e. the leak is stopped by any emergency responders, all further repairs to both units is not the OGT's responsibility. The unit owners shall contact each other and their respective insurances. No employee or contractor of OGT may provide services to the affected units without a written request!!! from the unit owners for assistance, and subsequent permission of the managing agent or the Board of Trustees, and charges for such services shall be attached as a levy to such a unit where the leak or any other detrimental activities originated.
+          </p>
+            <p>
+  Thank you for your understanding and cooperation.
+Board of Trustees
+            </p>
+            
+          </div>
+        </section>
+
+        <section id="s11">
+          <h2>13-15: Parking</h2>
+          <div class="content">
+            <p>
+              This section contains general parking information: assigned spots, guest parking, vehicle registration, towing policies, and enforcement.
+            </p>
+            <p>
+           ATTENTION RESIDENTS
+EFFECTIVE IMMEDIATELY
+STRICTLY ENFORCED PARKING POLICY IN Ocean Gate Tower: NO VEHICLE IS ALLOWED TO PARK IN PARKING SPACES property OF OGT WITHOUT A VALID PERMIT:
+Parking spaces in the upper garage: 001, 002, 746, 781, 784
+Parking spaces in the lower garage: 31, 32, 34,45, 46, 290, 300, 303, 304, 305, 307, 359, 366
+Outback (along the fence): 1,2,3,4,5,6
+Outback visitors: Special permits required: First 24 hrs within a 7-day period - complimentary with a yellow permit.
+After that each day -$4.00 green permit.
+The whole week - $20.00 orange permit
+(includes first 24 hrs and last 24 hrs complimentary parking, can't be combined with the yellow permit).
+ALL VIOLATORS SHALL BE TOWED AWAY AT A VEHICLE OWNER'S EXPENSE AND /or
+ESCALATING FINES ($100 -1st violation, $150 -2nd, $250/day after that) FROM OGT SHALL BE levied to the unit.
+Please obtain the valid permits in the Office.
+Thank you for your cooperation!
+Board of Trustees
+9/1/2015
+            </p>
+
+<p>
+  ATTENTION RESIDENTS:
+NEW PARKING POLICY OF OGT (decals to be displayed in the lower right corner of a car rear window)
+Due to increased complaints of the residents of OGT about parking violations in both garages and in the outback of the property the Board of Trustees adopted the following Resolution:
+Starting September 1, 2015 the management of OGT shall conduct a Parking Assignment Project to be completed within 30 days:
+1. Every Unit Owner shall register with the office of OGT his/her own car parked in the DEEDED SPACES inside the garages. He/She will receive a non-transferable recorded decal of light blue color. One decal per a deeded parking space. No substitutions of the vehicles. This decal does NOT allow a unit owner to park such car anywhere else on the OGT's property. Your family members may park in your deeded space if you do not need it for your own car because you don't have your car at the moment, and only with a special "Family Parking Permit" after such vehicle is registered with the office.
+2. Every Unit Owner who rents out his/her deeded parking space (in
+accordance with all applicable laws, it may only be to a resident of OGT and only for a regular personal car) shall register such a car with the office and receive one navy color non-transferable recorded decal per a parking space so leased. In order to receive such a decal a unit owner must make sure that the Lease Agreement for his/her unit is current and recorded in the on-site Office (unit renter's driver's license enclosed). If a lease/rent transaction is between two unit owners for a deeded parking space only, then a Lease Agreement for the Parking space with a renter's driver's license has to be recorded in the OGT Office. The decal does NOT allow to park such car anywhere else on the OGT property. No substitutions of the vehicles. Your family members may park in your rented deeded space if you do not use it for parking of your own car because you don't have a car at that moment, and only with a special "Family Parking Permit" after such vehicle is registered with the office.
+3. A Unit Owner who needs additional parking space for his/her own car or his/her unit renter's car may apply in the office for the rent of the Association parking space. The rental Agreement with OGT shall be signed and one non-transferable self-destructive decal of red color shall be granted to such vehicle pending the availability of the parking space. Thedecal does NOT allow to park such car anywhere else on the OGT property. No substitutions of the vehicles. Your family members may park in your assigned by the Board space if you do not use it for parking of your own car because you don't have your car at that moment, and only with a special "Family Parking Permit" after such vehicle is registered with the office.
+NOTE: The Association parking spaces are in full discretion of the Board of Trustees and are rented out at the price of $50/month inside the garages and $25/month in the outback (prices subject to change by the decision of the Board of Trustees). Vehicles parked anywhere on the premises of OGT without authorization shall be either towed away immediately, and/or fines shall be levied to the unit per perpetration in accordance with the current Fine Schedule approved by the Board. No special attempts to contact the unit owner guilty of such violations shall be made by OGT personnel.
+4. EFFECTIVE IMMEDIATELY:
+ATTENTION: 5 Visitors' parking spaces in the outback and 3 visitors' 90-minutes parking spaces in the front are COMMON AREAS and are in full discretion of the BOARD OF TRUSTEES with assigned prices for residents to have their guests' vehicles parked there on first come-first served basis.
+Parking in the VISITORS' outback parking spaces (5) is allowed by the PARKING PERMIT only (received and recorded in the Office of OGT by a host-- UNIT OWNER/licensed RESIDENT, reasonably in advance.
+First 24 hours within one week is complimentary (Yellow tag). No hours' roll-
+over.
+Each next day within the same week is $4/day (Green tag)
+A weekly parking is $20, first and last 24 hrs are complimentary (Orange tag). If a parking week is terminated due to emergency departure of a guest, unused paid days will be refunded if the management is notified within 2 hours of such departure and the parking tag returned to the office at that time.
+Definition of a "Visitor": Any vehicle in good condition that fits within a space parking lines, insured and currently registered. The purpose of visitation is not a concern of OGT (i.e. contractors, employees, friends, family members, agents, etc.: all unit owners/licensed residents must obtain a tag for their guests and pay for it, NO EXCEPTIONS!)
+NOTE: When executed, the New Parking Policy will allow the OGT management upon your request to take care of your parking spaces quickly and efficiently. OGT does not assume any liability for theft or damages to vehicles parked at OGT Thank you for your cooperation.
+Board of Trustees
+08/26/2015
+</p>
+
+          </div>
+        </section>
+
+        <section id="s12">
+          <h2>16-17: Move-in and Move-out</h2>
+          <div class="content">
+            <p>
+              This section outlines move-in/move-out procedures such as scheduling, elevator reservations, protective padding, deposits, and contractor access.
+            </p>
+            <p>
+ATTENTION: ALL RESIDENTS
+IMPORTANT NOTICE
+Effective September 1, 2015, the following resolution of the Board shall be enforced. Move-In and Move-Out of the building may be executed between the hours of 8:00AM-1:00PM and/or 1:00PM-5:00PM.
+For each 4 hour, time window there shall be the following charges. It is $100.00 for the cargo elevators' the usage and $10.00 per hour for supervision by OGT Personnel.
+Refundable "NO DAMAGE" of $250.00 deposit continuous to be effective.
+Delivery to/removal from property one or two big items (appliances, pieces of furniture) will be charge of $25.00 per cargo elevator run up and down including the supervision of OGT personnel.
+Move in and Move out are allowed Monday through Thursday with ALL checks submitted at the time of reservation one week in advance.
+Board of Trustees
+August 1, 2015
+            </p>
+<p>
+Ocean Gate Tower Condominium
+Policy for Elevator Use for Moving and Deliveries Effective as of September 1, 2015
+Elevators
+Ocean Gate Tower Condominium has two elevators, 1 of which has a front and back door, is larger, and has more height for the purpose of moves and deliveries.
+Schedule Restrictions
+Moving in or out of Ocean Gate Tower Condominium is to be done only on weekdays from 9:00 AM to 5:00 PM. No moves permitted on Holidays or weekends, or in the evenings. This is when the elevators are in demand so both elevators are needed for residents living here.
+Reservations and Fee
+Effective September 1, 2015, the following resolution of the Board shall be enforced. Move-In and Move-Out of the building may be executed between the hours of 9:00AM-5:00PM. The elevator may be reserved for a four-hour period. Each day will consist of two four-hour periods, one in the morning, from 9 am to 1 pm, and one in the afternoon, from 1 pm to 5 pm All moves are on a first come first served basis For each 4-hour-time- window there shall be the following charges: $100.00 for the cargo elevator's usage and $10.00 per hour for supervision by OGT personnel. Refundable "NO DAMAGE" of $250.00 deposit continuous to be effective. Delivery to/removal from property of one or two big items (appliances, pieces of furniture, mattresses, etc) will be charged in the amount of $25.00 per cargo elevator run up and down including the supervision of OGT personnel. Move in and Move out as well as deliveries are allowed Monday through Friday with ALL checks submitted at the time of reservation one week in advance.
+Rear Entrance Deliveries/Moves
+All deliveries of Items that require a handcart, or larger items requiring two or more persons to carry must be made through the back door. There is a loading area accessible from the rear door of the cargo elevator that must be opened first with a key kept in the office. Only staff can open that door. It was done for security purposes for residents' safety.
+Receiving
+Each resident or his/her agent must be home to receive the delivery or service person(s). Management and Ocean Gate Tower Condominium Staff will not take the place of your agent.
+Construction Debris, Carpets, etc.
+The above materials may not be disposed of through the normal trash collection process. Please arrange for your contractors to take away all construction remains and dispose of all materials, including furniture, appliances, mattresses, etc.
+Fines
+A one time fine of $250.00 will be assessed to the unit for violating this policy as set by the Board of Trustees. Unauthorized moves include any moves, which are made through the lobby, on the passenger elevator or on the freight elevator without approval. All fines will be levied to the unit owner of record.
+
+</p>
+
+          </div>
+        </section>
+
+        <section id="s13">
+          <h2>18-19: Pool Area Schedule</h2>
+          <div class="content">
+            <p>
+              This section lists pool area hours, seasonal schedules, closures, and any special event rules.
+            </p>
+            <p>
+        POOL AREA
+SCHEDULE
+Open daily from 9:00 AM to 11:30 PM.
+PLEASE FOLLOW UP THE RULES TO AVOID FINES: • Only current residents of OGT and their guests
+accompanied by the residents are allowed to use the pool area. Limit: 5 people from each unit at a time. 1 adult must accompany 2 children under 16 years old. ATTENTION: unit owners-lessors and/or their families are not allowed to use the amenities of OGT.
+• No outdoor clothes, or shoes, or toys, or exercise equipment are allowed in the pool area. The pool area may not be used for washing off sand or mud. Cleansing shower is a must before entering the pool. Please remove trash and personal items from the pool area before exiting it. Trash containers are in the locker rooms. No food or beverages are allowed in the pool area. Only fresh water in plastic, paper or stainless steel containers may be brought inside the pool area. Please refrain from using creams, oils, conditioners, etc In the pool. While using personal care products in the locker rooms, please make sure that no greasy, slippery residue is left behind on any surface of the area There is no lifeguard on duty. All persons using the pool area do so at their own risk. No diving, jumping in the pool, no running on the pool deck, no unnecessary roughness, no horseplay, no loud noises (radios, phones may be used only with earphones)
+Please be polite and considerate. Please make sure you do
+not drip water outside the pool area Thank you for your cooperation! Schedule of Fines: 1st violation of -$100.00, 2nd -$150.00, 3d and
+any subsequent violations -$250.00/each and/or revocation of the Right to use the pool area altogether
+Board of Trustees
+September 2014
+            </p>
+<p>
+  ATTENTION
+RESIDENTS!
+Due to multiple and constant violations of the Rules and Regulations governing the activities in the common areas of OGT the Pool area shall be locked at all times. Only registered and current residents of OGT may enter this area and use it in accordance with all applicable laws including but not limited to:
+1. Do not come to this area if you are sick.
+2. Register with the front desk to enter.
+3. No street or dirty cloth, no street or dirty footwear. 4. Take a cleansing hot shower with soap. 5. Do not leave anything behind in the pool itself or any other area of this location.
+6. Before exiting the pool area make sure that you, your clothes and your footwear are dry and clean. 7. Log out at the exit, make sure that the management checked the area after your use and confirmed that the area is ready for a next user.
+For each violation an immediate fine of $150.00 shall be levied to the unit responsible for such act of utter disregard of others' rights of use.
+Next violation shall be a foundation of permanent ban of further use of this common area by the said unit. Thank you for your cooperation!
+Board of Trustees
+8/10/2015
+</p>
+
+          </div>
+        </section>
+
+        <section id="s14">
+          <h2>20: Pool Area Rules</h2>
+          <div class="content">
+            <p>
+              This section contains pool rules such as guest limits, supervision requirements, permitted items, noise expectations, and cleanliness.
+            </p>
+            <p>
+ATTENTION PARENTS AND
+GRANDPARENTS!
+NO TOYS SMALLER THAN 1 FOOT by 1 FOOT
+IS ALLOWED IN THE POOL! They get caught in the filtration system and ruin it. Our pool is not a kiddy pool. ALL residents of OGT are entitled to safe condition and enjoyment of the pool! DO NOT RUIN IT FOR OTHERS!
+OCM Management, CPO
+Thank you for your cooperation!
+01/20/2016            </p>
+          </div>
+        </section>
+
+        <section id="s15">
+          <h2> Heat, Light, Cooking</h2>
+          <div class="content">
+            <p>
+              This section provides general guidelines regarding heating, lighting, cooking safety, and appliance use.
+            </p>
+            <p>
+            NATURAL GAS supplied to the boiler room of this building is used to power the heating system in OGT. The heat is provided to individual apartments through the Whalen Units via hot water pipes. It is included into condo fees.
+Cooking and washing appliances are powered by electricity of each individual Condo. If you need to use an auxiliary source of heat, lights, cooking
+IT MAY ONLY BE ELECTRIC. (Batteries are OK)
+NO OTHER TYPE OF FUEL IS ALLOWED IN THIS BUILDING at all times: 1) NO SOLID FUELS, like wood and its derivatives, coal and its derivatives (smokeless or not) charcoal,, briquettes, peat, dung, wood pellets, grains, etc. 2)NO LIQUID FUELS, petroleum and its derivatives, benzene, kerosene, gasoline, diesel, LPG, coal tar, naphtha, ethanol, etc.
+3) NO Gaseous fuels: Natural gas, hydrogen, propane, butane, methane, coal gas, blast furnace gas, coke oven gas, CNG, etc.
+4) NO Bio fuels OR Nuclear
+The usage of banned fuels are extremely dangerous in this building, since the building is not equipped with a proper exhaust system. It is possible for a fuel gas to be undetected and collect in certain areas, leading to a gas explosion. Smoldering of solid fuels emits combustion gases causing deterioration of air quality and subsequent health problems.
+The Board of Trustees declares the use of
+alternative fuels in the building illegal in accordance with all applicable laws and shall treat it as
+an emergency in OGT. The Board shall enter your unit immediately for termination of such activities.
+Any form of non-cooperation in that regard shall be deemed as a criminal intent to inflict harm to the
+property and its residents. The legal procedures shall be initiated.
+EFFECTIVE IMMEDIATELY
+            </p>
+          </div>
+        </section>
+
+        <section id="s16">
+          <h2>22: Annual Lease Agreement with Tenants</h2>
+          <div class="content">
+            <p>
+              This section summarizes expectations for annual leases, renewals, tenant responsibilities, and any required disclosures.
+            </p>
+            <p>
+Dear Unit Owners:
+January 26, 2016
+All unit owners who rent out their units must submit an annual lease agreement with the tenants to the Management office. If your tenants are on Section 8 or Housing Voucher Program you have to inform the Management office and submit any contract that you, as a unit owner, enter into with Government Housing Authorities.
+The Management office is not going to accommodate the inspection of common areas for any units unless the unit owner informs the office 48 hours in advance of upcoming inspection.
+The fines will be attach accordingly $100, $150, and $250.
+If you have any questions or concerns please call DK Condominium Management LLC, Managing Agent for the Board of Trustees at <strong><a href="tel:+17815215656">781-521-5656</a></strong>.
+Effective January 27, 2016. Execution period is 30 days from the receipt of this
+announcement.
+Board of Trustees
+mailing            </p>
+          </div>
+        </section>
+
+
         <section id="s7">
-          <h2>23-36: Rules and regulations 2008</h2>
+          <h2>Rules and regulations 2008</h2>
           <div class="content">
             <p>
               This section contains legacy (2008) rules and regulations content. Use it for archival reference, historic policy language, or comparisons against newer rules.
@@ -894,355 +1239,117 @@ Every dwelling unit shall contain at least 150 square feet of floor space for it
             </ol>
 
 All Unit Owners shall comply with all provisions of The Unit Owner Maintenance Agreement.
-
-
-            </p>
-          </div>
-        </section>
-
-        <section id="s8">
-          <h2>9: Packages (Outdated)</h2>
-          <div class="content">
-            <p>
-              This section describes prior package delivery procedures and is marked as outdated. Keep it only if you need an archive of older instructions.
-            </p>
-            <p>ATTENTION RESIDENTS:
-Packages received for you by the office shall be released only between the hours:
-4:30 PM to 11:30 PM and ONLY by a concierge after you sign for it in the LOG
-BOOK.
-Exception: medication from an acknowledged medical
-supplier.
-Please do not disturb the manager! It is a courtesy service, if you need more expedient delivery please contact your mail car-
-Board of Trustees
-rier directly.
-Thank you for your cooperation!
-
-            </p>
-          </div>
-        </section>
-
-        <section id="s9">
-          <h2>10: Security Issues</h2>
-          <div class="content">
-            <p>
-              This section provides general security guidance such as building access, door and gate policies, visitor procedures, and reporting suspicious activity.
-            </p>
-            <p>
-             Attention Residents:
-Effective Immediately. Security Issue!
-The Board of Trustees received multiple complaints from the residents of the building about an increasing amount of unfamiliar people roaming around the property, having lunches in the community room, using the pool and amenities, knocking on the units' doors with attempts of different solicitations!
-Such activities are strictly forbidden in OGT. Please instruct your guests/visitors to sign in/out at the entrance/exit of the property at the concierge desk or in the office of OGT. Those visitors who parked their vehicles in a 90-minutes zone must register such cars with the front desk.
-Definition of a "visitor/guest": You do not live here, you are a visitor or a guest, unless you own a unit but rent it out at the moment.
-No exceptions for: a family member, a friend, a contractor, a servant, a nurse, an agent, an employee, etc.
-Please also remember: you are responsible for the behavior of your guests inside the building as well as outside. You must accompany your visitors in the common areas. Please watch your children: no running, no screaming in the corridors. Please do not disturb your neighbors. Have a little respect for each other.
-Thank you for your cooperation!
-Board of Trustees
-            </p>
-          </div>
-        </section>
-
-        <section id="s10">
-          <h2>11-12: Report to the Office for any repairs/maintenance issues</h2>
-          <div class="content">
-            <p>
-              This section explains how to report repairs and maintenance issues to the office, including what details to include, how to submit photos, and expected response times.
-            </p>
-            <p>
-ATTENTION RESIDENTS:
-The Board of Trustees and the Property management encourage you to report to the Office your findings of repairs/maintenance necessities in the common areas of the building. Please also report the emergencies in your unit that might affect the adjacent units or common areas. Definition of EMERGENCY: live water leaks that you can't stop, NO heat or AC, NO hot water, elevators' malfunction., trash chute malfunction.
-For these purposes, and for these emergencies only, please call:<strong><a href="tel:+17812846250">781-284-6250</a></strong> 24/7.
-Other repairs or maintenance concerns: water stains on the ceilings or walls in your units or common areas; noise; pests - mice, bedbugs, cockroaches, etc.; dirty or damaged floors, walls in common areas, malfunctioning equip- ment in laundry rooms, garages, pool areas- shall be submitted to the management office in writing only. The repairs/maintenance REQUEST FORM is available on the office door. Please fill it out and drop into the mail box below on the same office door. Your concerns will be addressed as soon as possible and the maintenance per- sonnel will be dispatched next business day.
-PLEASE DO NOT DISTURB THE MANAGEMENT FOR EQUIPMENT MALFUNCTIONS INSIDE YOUR OWN UNITS: dishwashers, faucets, noisy toilets, dripping showerheads, electrical equipment, electronics, phones are the responsibility of the unit owners. If you are renters, call your landlords - the unit owners. OGT IS NOT your landlord. The Board and the management deal only with the common areas and your units when and if they endanger the common areas and adjacent units.
-ATTENTION UNIT OWNERS: when you decide to remodel your units, please submit the description of the project to the Board of Trustees in accordance with the governing documents of the Association. All works must be performed by licensed and insured professionals.
-Please use the common sense and if in doubt, please contact the customer assistance line at <strong><a href="tel:+17812841740">781-284-1740</a></strong> (from 9 am to 11 pm) or e-mail: <strong><a href="mailto:Office@dkmanagementllc.net">Office@dkmanagementllc.net</a></strong>.
-Thank you for your cooperation!
-Board of Trustees
-June 2014
-            </p>
-            <p>
-              October 21, 2014:
-Announcement for the Residents of OGT (repairs and emergencies)
-When and if the units of OGT conduct any type of repairs or remodeling in their units it is the responsibility of the unit owner to supervise, monitor and arrange in advance their contractors. NO employee of OGT may assist unit owners in those works. It is also the responsibility of the unit owners not to obstruct any common areas during such activities, not to use common areas' electrical power or plumbing, and leave the common areas clean every day by 5:30 pm.
-Dear Unit Owners, please consider the following: YOU, the UNIT OWNERS, go to your places of business where you get paid for your hours of services rendered, so do the employees of the Association. Your condo fees cover only the services of OGT employees' rendered to the common areas of the Association. Any work conducted in your individual units is your personal responsibility. You own your units!
-HOWEVER, if the emergency comes from a unit and affects other units or the common areas, the management shall enter your units and eliminate the emergency situation, like: the leak from a dishwasher stop the leak inside the unit if possible (the unit will be re-billed for the services), and/or the common areas. Further repairs in the unit may not include the services of OGT employees and/or their time. The Unit Owners shall pay for services for their individual units' problems.
-ANOTHER EXAMPLE: the leak was caused by the common pipes inside the walls or ceilings, then it is an emergency when the OGT management and the contractor enter the unit and eliminate the emergency, as well as perform the repairs of the common pipes. If and only if the Association needed to cut through the dry walls and open the ceiling or the wall, the Association will close that hole, mud it, sand it, and prime it: make the wall or a ceiling whole again. It's the responsibility of the Association. The Association is not going to paint the ceiling or the wall, or replace the walls in the units that the Association did not cut or any individual unit's items because this is the responsibility of the unit owner. (See Master Deed, boundaries of your units) .That's why the unit owners have their own insurances. The cause of the leak was no one's fault, it was an unexpected damaging event, unless the Association knew about it and did nothing. However, If the unit owner/resident saw the wet stain and neglected to report it to the management, then the unit will be charged for the repairs. Remember: the Association is not an insurer, and the Association will not re-build the whole building, especially the concealed plumbing or fire pipes, just to be pro-active, because the developer failed to build it properly 35 years ago. When we bought our respective units, we all knew what we were buying into.
-NEXT, if the leak originated in the unit above, then after the emergency is taken care of, i.e. the leak is stopped by any emergency responders, all further repairs to both units is not the OGT's responsibility. The unit owners shall contact each other and their respective insurances. No employee or contractor of OGT may provide services to the affected units without a written request!!! from the unit owners for assistance, and subsequent permission of the managing agent or the Board of Trustees, and charges for such services shall be attached as a levy to such a unit where the leak or any other detrimental activities originated. Thank you for your understanding and cooperation.
-Board of Trustees
-            </p>
-            
-          </div>
-        </section>
-
-        <section id="s11">
-          <h2>13-15: Parking</h2>
-          <div class="content">
-            <p>
-              This section contains general parking information: assigned spots, guest parking, vehicle registration, towing policies, and enforcement.
-            </p>
-            <p>
-           ATTENTION RESIDENTS
-EFFECTIVE IMMEDIATELY
-STRICTLY ENFORCED PARKING POLICY IN Ocean Gate Tower: NO VEHICLE IS ALLOWED TO PARK IN PARKING SPACES property OF OGT WITHOUT A VALID PERMIT:
-Parking spaces in the upper garage: 001, 002, 746, 781, 784
-Parking spaces in the lower garage: 31, 32, 34,45, 46, 290, 300, 303, 304, 305, 307, 359, 366
-Outback (along the fence): 1,2,3,4,5,6
-Outback visitors: Special permits required: First 24 hrs within a 7-day period - complimentary with a yellow permit.
-After that each day -$4.00 green permit.
-The whole week - $20.00 orange permit
-(includes first 24 hrs and last 24 hrs complimentary parking, can't be combined with the yellow permit).
-ALL VIOLATORS SHALL BE TOWED AWAY AT A VEHICLE OWNER'S EXPENSE AND /or
-ESCALATING FINES ($100 -1st violation, $150 -2nd, $250/day after that) FROM OGT SHALL BE levied to the unit.
-Please obtain the valid permits in the Office.
-Thank you for your cooperation!
-Board of Trustees
-9/1/2015
             </p>
 
-<p>
-  ATTENTION RESIDENTS:
-NEW PARKING POLICY OF OGT (decals to be displayed in the lower right corner of a car rear window)
-Due to increased complaints of the residents of OGT about parking violations in both garages and in the outback of the property the Board of Trustees adopted the following Resolution:
-Starting September 1, 2015 the management of OGT shall conduct a Parking Assignment Project to be completed within 30 days:
-1. Every Unit Owner shall register with the office of OGT his/her own car parked in the DEEDED SPACES inside the garages. He/She will receive a non-transferable recorded decal of light blue color. One decal per a deeded parking space. No substitutions of the vehicles. This decal does NOT allow a unit owner to park such car anywhere else on the OGT's property. Your family members may park in your deeded space if you do not need it for your own car because you don't have your car at the moment, and only with a special "Family Parking Permit" after such vehicle is registered with the office.
-2. Every Unit Owner who rents out his/her deeded parking space (in
-accordance with all applicable laws, it may only be to a resident of OGT and only for a regular personal car) shall register such a car with the office and receive one navy color non-transferable recorded decal per a parking space so leased. In order to receive such a decal a unit owner must make sure that the Lease Agreement for his/her unit is current and recorded in the on-site Office (unit renter's driver's license enclosed). If a lease/rent transaction is between two unit owners for a deeded parking space only, then a Lease Agreement for the Parking space with a renter's driver's license has to be recorded in the OGT Office. The decal does NOT allow to park such car anywhere else on the OGT property. No substitutions of the vehicles. Your family members may park in your rented deeded space if you do not use it for parking of your own car because you don't have a car at that moment, and only with a special "Family Parking Permit" after such vehicle is registered with the office.
-3. A Unit Owner who needs additional parking space for his/her own car or his/her unit renter's car may apply in the office for the rent of the Association parking space. The rental Agreement with OGT shall be signed and one non-transferable self-destructive decal of red color shall be granted to such vehicle pending the availability of the parking space. Thedecal does NOT allow to park such car anywhere else on the OGT property. No substitutions of the vehicles. Your family members may park in your assigned by the Board space if you do not use it for parking of your own car because you don't have your car at that moment, and only with a special "Family Parking Permit" after such vehicle is registered with the office.
-NOTE: The Association parking spaces are in full discretion of the Board of Trustees and are rented out at the price of $50/month inside the garages and $25/month in the outback (prices subject to change by the decision of the Board of Trustees). Vehicles parked anywhere on the premises of OGT without authorization shall be either towed away immediately, and/or fines shall be levied to the unit per perpetration in accordance with the current Fine Schedule approved by the Board. No special attempts to contact the unit owner guilty of such violations shall be made by OGT personnel.
-4. EFFECTIVE IMMEDIATELY:
-ATTENTION: 5 Visitors' parking spaces in the outback and 3 visitors' 90-minutes parking spaces in the front are COMMON AREAS and are in full discretion of the BOARD OF TRUSTEES with assigned prices for residents to have their guests' vehicles parked there on first come-first served basis.
-Parking in the VISITORS' outback parking spaces (5) is allowed by the PARKING PERMIT only (received and recorded in the Office of OGT by a host-- UNIT OWNER/licensed RESIDENT, reasonably in advance.
-First 24 hours within one week is complimentary (Yellow tag). No hours' roll-
-over.
-Each next day within the same week is $4/day (Green tag)
-A weekly parking is $20, first and last 24 hrs are complimentary (Orange tag). If a parking week is terminated due to emergency departure of a guest, unused paid days will be refunded if the management is notified within 2 hours of such departure and the parking tag returned to the office at that time.
-Definition of a "Visitor": Any vehicle in good condition that fits within a space parking lines, insured and currently registered. The purpose of visitation is not a concern of OGT (i.e. contractors, employees, friends, family members, agents, etc.: all unit owners/licensed residents must obtain a tag for their guests and pay for it, NO EXCEPTIONS!)
-NOTE: When executed, the New Parking Policy will allow the OGT management upon your request to take care of your parking spaces quickly and efficiently. OGT does not assume any liability for theft or damages to vehicles parked at OGT Thank you for your cooperation.
-Board of Trustees
-08/26/2015
-</p>
+          <center> <h3>Unit Owners Maintenance Resolution</h3></center>
 
-          </div>
-        </section>
+            <p>
+The Board of Trustees of the Ocean Gate Tower Condominium (the "Condominium") adopt the following administrative resolution as an amendment to the Association's rules and regulations pursuant to Article V, Section 5.8 of the Declaration of Trust:
 
-        <section id="s12">
-          <h2>16-17: Move-in and Move-out</h2>
-          <div class="content">
-            <p>
-              This section outlines move-in/move-out procedures such as scheduling, elevator reservations, protective padding, deposits, and contractor access.
-            </p>
-            <p>
-ATTENTION: ALL RESIDENTS
-IMPORTANT NOTICE
-Effective September 1, 2015, the following resolution of the Board shall be enforced. Move-In and Move-Out of the building may be executed between the hours of 8:00AM-1:00PM and/or 1:00PM-5:00PM.
-For each 4 hour, time window there shall be the following charges. It is $100.00 for the cargo elevators' the usage and $10.00 per hour for supervision by OGT Personnel.
-Refundable "NO DAMAGE" of $250.00 deposit continuous to be effective.
-Delivery to/removal from property one or two big items (appliances, pieces of furniture) will be charge of $25.00 per cargo elevator run up and down including the supervision of OGT personnel.
-Move in and Move out are allowed Monday through Thursday with ALL checks submitted at the time of reservation one week in advance.
-Board of Trustees
-August 1, 2015
-            </p>
-<p>
-Ocean Gate Tower Condominium
-Policy for Elevator Use for Moving and Deliveries Effective as of September 1, 2015
-Elevators
-Ocean Gate Tower Condominium has two elevators, 1 of which has a front and back door, is larger, and has more height for the purpose of moves and deliveries.
-Schedule Restrictions
-Moving in or out of Ocean Gate Tower Condominium is to be done only on weekdays from 9:00 AM to 5:00 PM. No moves permitted on Holidays or weekends, or in the evenings. This is when the elevators are in demand so both elevators are needed for residents living here.
-Reservations and Fee
-Effective September 1, 2015, the following resolution of the Board shall be enforced. Move-In and Move-Out of the building may be executed between the hours of 9:00AM-5:00PM. The elevator may be reserved for a four-hour period. Each day will consist of two four-hour periods, one in the morning, from 9 am to 1 pm, and one in the afternoon, from 1 pm to 5 pm All moves are on a first come first served basis For each 4-hour-time- window there shall be the following charges: $100.00 for the cargo elevator's usage and $10.00 per hour for supervision by OGT personnel. Refundable "NO DAMAGE" of $250.00 deposit continuous to be effective. Delivery to/removal from property of one or two big items (appliances, pieces of furniture, mattresses, etc) will be charged in the amount of $25.00 per cargo elevator run up and down including the supervision of OGT personnel. Move in and Move out as well as deliveries are allowed Monday through Friday with ALL checks submitted at the time of reservation one week in advance.
-Rear Entrance Deliveries/Moves
-All deliveries of Items that require a handcart, or larger items requiring two or more persons to carry must be made through the back door. There is a loading area accessible from the rear door of the cargo elevator that must be opened first with a key kept in the office. Only staff can open that door. It was done for security purposes for residents' safety.
-Receiving
-Each resident or his/her agent must be home to receive the delivery or service person(s). Management and Ocean Gate Tower Condominium Staff will not take the place of your agent.
-Construction Debris, Carpets, etc.
-The above materials may not be disposed of through the normal trash collection process. Please arrange for your contractors to take away all construction remains and dispose of all materials, including furniture, appliances, mattresses, etc.
-Fines
-A one time fine of $250.00 will be assessed to the unit for violating this policy as set by the Board of Trustees. Unauthorized moves include any moves, which are made through the lobby, on the passenger elevator or on the freight elevator without approval. All fines will be levied to the unit owner of record.
-
-</p>
-
-          </div>
-        </section>
-
-        <section id="s13">
-          <h2>18-19: Pool Area Schedule</h2>
-          <div class="content">
-            <p>
-              This section lists pool area hours, seasonal schedules, closures, and any special event rules.
-            </p>
-            <p>
-        POOL AREA
-SCHEDULE
-Open daily from 9:00 AM to 11:30 PM.
-PLEASE FOLLOW UP THE RULES TO AVOID FINES: • Only current residents of OGT and their guests
-accompanied by the residents are allowed to use the pool area. Limit: 5 people from each unit at a time. 1 adult must accompany 2 children under 16 years old. ATTENTION: unit owners-lessors and/or their families are not allowed to use the amenities of OGT.
-• No outdoor clothes, or shoes, or toys, or exercise equipment are allowed in the pool area. The pool area may not be used for washing off sand or mud. Cleansing shower is a must before entering the pool. Please remove trash and personal items from the pool area before exiting it. Trash containers are in the locker rooms. No food or beverages are allowed in the pool area. Only fresh water in plastic, paper or stainless steel containers may be brought inside the pool area. Please refrain from using creams, oils, conditioners, etc In the pool. While using personal care products in the locker rooms, please make sure that no greasy, slippery residue is left behind on any surface of the area There is no lifeguard on duty. All persons using the pool area do so at their own risk. No diving, jumping in the pool, no running on the pool deck, no unnecessary roughness, no horseplay, no loud noises (radios, phones may be used only with earphones)
-Please be polite and considerate. Please make sure you do
-not drip water outside the pool area Thank you for your cooperation! Schedule of Fines: 1st violation of -$100.00, 2nd -$150.00, 3d and
-any subsequent violations -$250.00/each and/or revocation of the Right to use the pool area altogether
-Board of Trustees
-September 2014
-            </p>
-<p>
-  ATTENTION
-RESIDENTS!
-Due to multiple and constant violations of the Rules and Regulations governing the activities in the common areas of OGT the Pool area shall be locked at all times. Only registered and current residents of OGT may enter this area and use it in accordance with all applicable laws including but not limited to:
-1. Do not come to this area if you are sick.
-2. Register with the front desk to enter.
-3. No street or dirty cloth, no street or dirty footwear. 4. Take a cleansing hot shower with soap. 5. Do not leave anything behind in the pool itself or any other area of this location.
-6. Before exiting the pool area make sure that you, your clothes and your footwear are dry and clean. 7. Log out at the exit, make sure that the management checked the area after your use and confirmed that the area is ready for a next user.
-For each violation an immediate fine of $150.00 shall be levied to the unit responsible for such act of utter disregard of others' rights of use.
-Next violation shall be a foundation of permanent ban of further use of this common area by the said unit. Thank you for your cooperation!
-Board of Trustees
-8/10/2015
-</p>
-
-          </div>
-        </section>
-
-        <section id="s14">
-          <h2>20: Pool Area Rules</h2>
-          <div class="content">
-            <p>
-              This section contains pool rules such as guest limits, supervision requirements, permitted items, noise expectations, and cleanliness.
-            </p>
-            <p>
-ATTENTION PARENTS AND
-GRANDPARENTS!
-NO TOYS SMALLER THAN 1 FOOT by 1 FOOT
-IS ALLOWED IN THE POOL! They get caught in the filtration system and ruin it. Our pool is not a kiddy pool. ALL residents of OGT are entitled to safe condition and enjoyment of the pool! DO NOT RUIN IT FOR OTHERS!
-OCM Management, CPO
-Thank you for your cooperation!
-01/20/2016            </p>
-          </div>
-        </section>
-
-        <section id="s15">
-          <h2> Heat, Light, Cooking</h2>
-          <div class="content">
-            <p>
-              This section provides general guidelines regarding heating, lighting, cooking safety, and appliance use.
-            </p>
-            <p>
-            NATURAL GAS supplied to the boiler room of this building is used to power the heating system in OGT. The heat is provided to individual apartments through the Whalen Units via hot water pipes. It is included into condo fees.
-Cooking and washing appliances are powered by electricity of each individual Condo. If you need to use an auxiliary source of heat, lights, cooking
-IT MAY ONLY BE ELECTRIC. (Batteries are OK)
-NO OTHER TYPE OF FUEL IS ALLOWED IN THIS BUILDING at all times: 1) NO SOLID FUELS, like wood and its derivatives, coal and its derivatives (smokeless or not) charcoal,, briquettes, peat, dung, wood pellets, grains, etc. 2)NO LIQUID FUELS, petroleum and its derivatives, benzene, kerosene, gasoline, diesel, LPG, coal tar, naphtha, ethanol, etc.
-3) NO Gaseous fuels: Natural gas, hydrogen, propane, butane, methane, coal gas, blast furnace gas, coke oven gas, CNG, etc.
-4) NO Bio fuels OR Nuclear
-The usage of banned fuels are extremely dangerous in this building, since the building is not equipped with a proper exhaust system. It is possible for a fuel gas to be undetected and collect in certain areas, leading to a gas explosion. Smoldering of solid fuels emits combustion gases causing deterioration of air quality and subsequent health problems.
-The Board of Trustees declares the use of
-alternative fuels in the building illegal in accordance with all applicable laws and shall treat it as
-an emergency in OGT. The Board shall enter your unit immediately for termination of such activities.
-Any form of non-cooperation in that regard shall be deemed as a criminal intent to inflict harm to the
-property and its residents. The legal procedures shall be initiated.
-EFFECTIVE IMMEDIATELY
-            </p>
-          </div>
-        </section>
-
-        <section id="s16">
-          <h2>22: Annual Lease Agreement with Tenants</h2>
-          <div class="content">
-            <p>
-              This section summarizes expectations for annual leases, renewals, tenant responsibilities, and any required disclosures.
-            </p>
-            <p>
-Dear Unit Owners:
-January 26, 2016
-All unit owners who rent out their units must submit an annual lease agreement with the tenants to the Management office. If your tenants are on Section 8 or Housing Voucher Program you have to inform the Management office and submit any contract that you, as a unit owner, enter into with Government Housing Authorities.
-The Management office is not going to accommodate the inspection of common areas for any units unless the unit owner informs the office 48 hours in advance of upcoming inspection.
-The fines will be attach accordingly $100, $150, and $250.
-If you have any questions or concerns please call DK Condominium Management LLC, Managing Agent for the Board of Trustees at <strong><a href="tel:+17815215656">781-521-5656</a></strong>.
-Effective January 27, 2016. Execution period is 30 days from the receipt of this
-announcement.
-Board of Trustees
-mailing            </p>
-          </div>
-        </section>
-
-        <section id="s17">
-          <h2>37-39: Unit Owners Maintenance Resolution</h2>
-          <div class="content">
-            <p>
-              This section describes a unit owner maintenance resolution, clarifying what maintenance items are owner responsibilities versus association responsibilities.
-            </p>
-            <p>
-OCEAN GATE TOWER CONDOMINIUM TRUST
-Amendment to the Rules and Regulations
-Unit Owner Maintenance Resolution
-The undersigned, being a majority of the Board of Trustees (the "Board") of the Ocean Gate Tower Condominium Trust (the "Association") under Declaration of Trust dated July 2, 1987 and recorded with the Suffolk County Registry of Deeds in Book 13927, Page 231, as amended, the organization of unit owners of the Ocean Gate Tower Condominium (the "Condominium"), do hereby adopt the following administrative resolution as an amendment to the Association's rules and regulations pursuant to Article V, Section 5.8 of the Declaration of Trust:
+<ol type="1">
+  <li>
 WHEREAS, the Board is empowered to oversee the administration and operation of the Condominium in accordance with the terms and provisions of its constituent documents;
+</li>
+<li>
 WHEREAS, the Unit Owners are entitled to exclusive possession of their respective Units pursuant to M.G.L. c. 183A, § 4, and also have the responsibility to properly maintain and repair their respective Units pursuant to Article V, Section 5.2.1 of the Declaration of Trust which provides inter alia:
 "Each Unit Owner shall be responsible for the proper maintenance, repair and replacement of his Unit and for the proper maintenance, repair and replacement of utility fixtures serving the same which are
 not part of the common areas and facilities."
+</li>
+<li>
 WHEREAS, the Board seeks to ensure that the Condominium, including the Units, are properly maintained so to prevent mold growth on the Condominium premises;
 WHEREAS, it is essential that any moisture and water intrusion be promptly addressed to inhibit the growth of mold;
+</li>
+<li>
 WHEREAS, it is critical that the Board be alerted immediately to the first signs of water intrusion within a Unit or the common areas of the Condominium to prevent and/or minimize the spread of water intrusion and moisture-related conditions to the Common Elements, the affected Unit and other Units in the Condominium;
+</li>
+<li>
 WHEREAS, the Unit Owners, having the exclusive possession of their respective Units, are solely able to observe any evidence of water intrusion, excessive moisture and/or corresponding mold growth within said Units; and
+</li>
+<li>
 WHEREAS, there is a need to establish both orderly and uniform procedures to address moisture and water intrusion in Units and common areas for the purpose of protecting the Units and Common Elements of the Condominium.
-19
-</content>
+</li>
+</ol>
 
-</page>
-
-<page>
-<page_no> 38  </page_no>
-<content>
 NOW, THEREFORE, BE IT RESOLVED, that the following rules, regulations and procedures shall be applicable:
+
+<ol type="1">
+  <li>
 1. Unit Owners shall be responsible to keep up and maintain their Units in a dry and clean manner and state, with a minimum air temperature within the Unit of not less than 55° degrees Fahrenheit and, for any Unit with a cooling system, a maximum air temperature of not greater than 77° Fahrenheit. Indoor relative humidity must be maintained between 30% and 55% at all times.
+</li>
+<li>
 Unit Owners shall be responsible to:
-2.
-(i)
-(ii)
-(iii)
-(iv)
-(v)
-(vi)
-(vii)
-clean and dust the surfaces within a Unit on a regular basis; immediately remove visible moisture accumulation on windows, windowsills and any other surfaces within the Unit;
+<ol type="i">
+<li>
+clean and dust the surfaces within a Unit on a regular basis;
+</li>
+<li>
+immediately remove visible moisture accumulation on windows, windowsills and any other surfaces within the Unit;
+</li>
+<li>
 immediately clean, dry and disinfect all liquid spills or leaks within the Unit;
+</li>
+<li>
 not block or cover any heating, ventilation or air-conditioning ducts and keep furniture and furnishings away from such ducts;
+</li>
+<li>
 engage a professional remediation company to mitigate any damage to the Unit resulting from leaks or spills;
+</li>
+<li>
 replace hot water heaters, if applicable, prior to the end of the warranty period;
+</li>
+<li>
 use braided metal hoses or high pressure equivalent on washing machines, if any;
+</li>
+<li>
 (viii) utilize licensed plumbers and electricians for any plumbing or electrical work within the unit;
-(ix) properly maintain, caulk, repair and replace all windows and skylights serving the unit to ensure they remain free of leaks or condensation; and notify the Board in writing of a contact person and emergency number if they are away from the unit for a period of two (2) days or more.
-(x)
-3. Unit Owners shall be solely responsible to ensure that any vents or exhaust fans serving the Unit are vented properly to the exterior including, without limitation, bath exhaust vents, stove vents and laundry dryer vents. In the event they are not properly vented, the Unit Owner shall repair the same, obtaining the written consent of the Board prior to undertaking any work in the common areas. In addition, Unit Owners shall be solely responsible to inspect, clean and maintain (including changing filters), at least annually, all such vents and exhaust fans.
-4.
+</li>
+<li>
+properly maintain, caulk, repair and replace all windows and skylights serving the unit to ensure they remain free of leaks or condensation; and 
+</li>
+<li>
+notify the Board in writing of a contact person and emergency number if they are away from the unit for a period of two (2) days or more.
+</li>
+</ol>
+</li>
+
+<li>
+ Unit Owners shall be solely responsible to ensure that any vents or exhaust fans serving the Unit are vented properly to the exterior including, without limitation, bath exhaust vents, stove vents and laundry dryer vents. In the event they are not properly vented, the Unit Owner shall repair the same, obtaining the written consent of the Board prior to undertaking any work in the common areas. In addition, Unit Owners shall be solely responsible to inspect, clean and maintain (including changing filters), at least annually, all such vents and exhaust fans.
+</li>
+<li>
 Unit Owners are required to report immediately, in writing, delivered to the
 Board:
-(i)
+<ol type="i">
+<li>
 any evidence of water leak or water infiltration or excessive moisture in the Unit or common areas;
-(ii)
+</li>
+<li>
 any evidence of mold or fungi growth within the Unit that cannot be completely removed with a common household cleaner; and/or
-20
-</content>
-
-</page>
-
-<page>
-<page_no> 39  </page_no>
-<content>
-5
-(iii)
+</li>
+<li>
 any failure or malfunction of any heating, ventilating or air conditioning system serving the Unit.
+</li>
+</ol>
+</li>
+<li>
 Unit Owners shall be responsible and liable for any expenses incurred by the Board for the maintenance, repair, replacement, cleaning and remediation to repair the Unit and to remove mold from the Unit in the event the Unit Owner fails to properly and promptly undertake the same. Notwithstanding the foregoing, the Board shall have no obligation to take any action within a Unit, but may do so in its sole discretion. Unit Owners shall allow immediate access to their Unit for such purposes pursuant to Massachusetts General Law, Chapter 183A, §4 and Article V, Section 5.1.14 of the Declaration of Trust.
-6. Unit Owners shall be responsible and liable for the expenses incurred by the Board for the maintenance, repair, replacement, cleaning and remediation of any damage to, and to remediate and remove mold from the Unit, other Units and the common areas caused by the Unit Owner's failure to maintain his/her Unit, or arising out of, relating to or resulting from the Unit Owner's failure to comply with the terms of this Resolution, the Master Deed, the Trust or the Rules and Regulations or for any other reason caused by the Unit Owner's actions. Such costs shall also include all costs incurred by the Trust, including, but not limited to, expenses for industrial hygienists and attorneys' fees.
-7. Unit Owners shall be personally responsible and liable for any fines, costs and attorneys' fees for violations of this Resolution and any damages suffered by the Condominium or other Owners or occupants at the Condominium, including any injuries to persons, arising out of, relating to or resulting from the failure of the Unit Owner to comply with the terms of this Resolution.
-8.
+</li>
+<li>
+Unit Owners shall be responsible and liable for the expenses incurred by the Board for the maintenance, repair, replacement, cleaning and remediation of any damage to, and to remediate and remove mold from the Unit, other Units and the common areas caused by the Unit Owner's failure to maintain his/her Unit, or arising out of, relating to or resulting from the Unit Owner's failure to comply with the terms of this Resolution, the Master Deed, the Trust or the Rules and Regulations or for any other reason caused by the Unit Owner's actions. Such costs shall also include all costs incurred by the Trust, including, but not limited to, expenses for industrial hygienists and attorneys' fees.
+</li>
+<li>
+Unit Owners shall be personally responsible and liable for any fines, costs and attorneys' fees for violations of this Resolution and any damages suffered by the Condominium or other Owners or occupants at the Condominium, including any injuries to persons, arising out of, relating to or resulting from the failure of the Unit Owner to comply with the terms of this Resolution.
+</li>
+<li>
 Any expenses or fines or attorneys' fees charged to a Unit Owner pursuant to this Resolution shall be collectible as a common expense.
-SO RESOLVED.
+</li>
+</ol>   
+
+<p>
 EXECUTED as a sealed instrument this 22 day of
-TL
-TRIST
-January
-2008
-AS TRUSTEES OF THE OCEAN GATE TOWER CONDOMINIUM TRUST AND NOT INDIVIDUALLY
-Sanya Josphin.
-FRST
-21            </p>
+January 2008, TRUSTEES OF THE OCEAN GATE TOWER CONDOMINIUM TRUST.
+    </p>
+
+     </p>
           </div>
         </section>
 
@@ -1544,6 +1651,8 @@ Work or cell phone
     </div>
   </div>
 
+  <a class="back-to-toc" href="#tocDetails">Table of Contents</a>
+
   <script>
     (function () {
       const main = document.getElementById('main');
@@ -1561,7 +1670,10 @@ Work or cell phone
         a.href = `#${section.id}`;
         a.textContent = text;
         a.dataset.target = section.id;
-        frag.appendChild(a);
+
+        const li = document.createElement('li');
+        li.appendChild(a);
+        frag.appendChild(li);
       });
       toc.appendChild(frag);
 
